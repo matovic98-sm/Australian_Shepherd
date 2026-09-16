@@ -9,13 +9,14 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
 }
 h2 {
     font-size: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p {
@@ -38,4 +39,41 @@ ul {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
+}
+.button {
+    background-color: darkblue;
+    color:aliceblue;
+    padding:20px;
+    text-align:center;
+    display:inline-block;
+    margin:20px;
+    border-radius:10px
+}
+footer {
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color:aliceblue;
+    font-size:20px;
+    font-weight: bold;
+}
+.subheader {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color:rgb(42, 48, 48);
+}
+#page1_image {
+    border-style: inset;
+    border-color: cornflowerblue;
+    margin-top:10px;
+}
+.overview {
+    font-size: 20px;
+    font-weight:480;
+}
+#page1_header {
+    border-radius: 20px;
+    padding-bottom:4px;
 }

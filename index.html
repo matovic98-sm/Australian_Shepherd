@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
-    <header>
+    <header id="page1_header">
         <!--Used heading 1 tag to indicate the main topic of the page-->
         <h1>Australian Shepherds</h1>
         <!--Used a paragraph tag to add text explaining the content of the page-->
-        <p>
+        <p class="overview">
             This page is all about Australian Shepherds! In it, we talk about 
             their history, key characteristics, and common health issues they 
             experience.
@@ -23,7 +23,8 @@
             <!--Included an image and alternative text to describe the image
             for screen readers, the source for the image's location, and defined the width
             to maintain a consistent image size relative to different screen sizes-->
-            <img alt="An image of my bicolor Australian Shepherd, Meadow." 
+            <img id="page1_image"
+                 alt="An image of my bicolor Australian Shepherd, Meadow." 
                  src="images/Meadow1.jpeg" width="40%"
             />
             <section>
@@ -55,7 +56,7 @@
                 <h3>Most Popular Colors</h3>
                 <!--Used a paragraph tag to include text describing the purpose of the 
                 ordered list-->
-                <p>
+                <p class="subheader">
                     These are the rankings for most popular coat colors from most popular
                     to least popular.
                 </p>
@@ -74,7 +75,7 @@
                 <h3>Common Health Issues</h3>
                 <!--Used a paragraph tag to include text describing the purpose of the 
                 unordered list-->
-                <p>
+                <p class="subheader">
                     This is a list of some of the health conditions that Aussies are prone
                     to.
                 </p>
@@ -96,7 +97,7 @@
     <footer>
         <!--Used an anchor tag to link to the other internal webpage and used
         a paragraph tag to wrap the link with text-->
-        <p>Click <a href="page2.html">here</a> to learn about Australian Shepherd care.</p>
+        <p class="button">Click <a href="page2.html">here</a> to learn about Australian Shepherd care.</p>
     </footer>
 </body>
 </html>
