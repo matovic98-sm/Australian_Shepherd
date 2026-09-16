@@ -1,5 +1,6 @@
 body {
     background-color: lightsteelblue;
+    margin-left:30px;
 }
 header {
     background-color:rgb(96, 128, 209);
@@ -24,11 +25,10 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 img {
-    width:40%;
-    height: 600px;
+    width:60%;
+    height: auto;
     border-radius:20px;
     display: block;
-    margin: auto;
 }
 ol {
     font-size: 16px;
@@ -68,12 +68,58 @@ footer a {
     border-style: inset;
     border-color: cornflowerblue;
     margin-top:10px;
+    width:80%;
+    height:auto;
 }
 .overview {
     font-size: 20px;
-    font-weight:480;
 }
 #page1_header {
     border-radius: 20px;
     padding-bottom:4px;
+}
+#training_games_row {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content:center;
+    gap:120px;
+}
+.column1 .column2 {
+    display:flex;
+    flex-direction:column;
+    margin:30px;
+}
+#image1_wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin:60px;
+}
+.index_column1 .index_column2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.index_column2 {
+    padding-right: 240px;
+    width:40%;
+}
+#image2_wrapper {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    justify-content: center;
+    margin:60px;
+}
+.page2_column2 {
+    display:flex;
+    flex-direction:column;
+    padding-right:320px;
+    width:50%;
+    justify-content:left;
+}
+#page2_image {
+    width:80%;
+    height:auto;
 }

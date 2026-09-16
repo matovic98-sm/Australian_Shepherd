@@ -18,15 +18,18 @@
     </header>
     <main>
         <article>
-            <!--Included an image and alternative text to describe the image
-            for screen readers, the source for the image's location, and defined the width
-            to maintain a consistent image size relative to different screen sizes-->
-            <img id="page2_image" 
-                alt="A picture of my Australian Shepherd, Meadow."
-                src="images/Meadow2.jpeg"
-                width="40%"
-            />
-            <section>
+            <section id="image2_wrapper">
+              <div class="page2_column1">
+                <!--Included an image and alternative text to describe the image
+                for screen readers, the source for the image's location, and defined the width
+                to maintain a consistent image size relative to different screen sizes-->
+                <img id="page2_image" 
+                    alt="A picture of my Australian Shepherd, Meadow."
+                    src="images/Meadow2.jpeg"
+                    width="40%"
+                />
+              </div>
+              <div class="page2_column2">
                 <!--Used the heading 2 tag to create the heading for a section of content-->
                 <h2>Exercise Needs</h2>
                 <!--Used the paragraph tag to create placeholder text for future content-->
@@ -34,8 +37,9 @@
                     In this section, I will talk about how much exercise an Australian 
                     Shepherd needs.
                 </p>
+              </div>
             </section>
-            <section id="mental_stimulation">
+            <section>
                 <!--Used the heading 2 tag to create the heading for a section of content-->
                 <h2>Mental Stimulation</h2>
                 <!--Used the paragraph tag to create placeholder text for future content-->
@@ -43,26 +47,32 @@
                     Here I will talk about the amount of mental stimulation an Australian
                     Shepherd needs and ways to achieve this.
                 </p>
-                <!--Used heading 3 tag to put less emphasis on this section-->
-                <h3>Most Important Training Exercises</h3>
-                <!--Created an ordered list to rank most important training exercises-->
-                <ol>
-                    <li>Socialization and Exposure Training</li>
-                    <li>Basic Commands and Attention Training</li>
-                    <li>Impulse Control Training</li>
-                    <li>Recall Training</li>
-                    <li>Advanced Training (Problem-Solving, Scent Work, Agility)</li>
-                </ol>
-                <!--Used heading 3 tag to put less emphasis on this section-->
-                <h3>Game Ideas</h3>
-                <!--Created an unordered list to include list items where order doesn't matter-->
-                <ul>
-                    <li>Interactive Puzzles</li>
-                    <li>Scent Work Games</li>
-                    <li>Hide and Seek</li>
-                    <li>Frisbee/Fetch</li>
-                    <li>Tug of War</li>
-                </ul>
+                <section id="training_games_row">
+                  <div class="column1">
+                    <!--Used heading 3 tag to put less emphasis on this section-->
+                    <h3>Most Important Training Exercises</h3>
+                    <!--Created an ordered list to rank most important training exercises-->
+                    <ol>
+                        <li>Socialization and Exposure Training</li>
+                        <li>Basic Commands and Attention Training</li>
+                        <li>Impulse Control Training</li>
+                        <li>Recall Training</li>
+                        <li>Advanced Training (Problem-Solving, Scent Work, Agility)</li>
+                    </ol>
+                  </div>
+                  <div class="column2">
+                    <!--Used heading 3 tag to put less emphasis on this section-->
+                    <h3>Game Ideas</h3>
+                    <!--Created an unordered list to include list items where order doesn't matter-->
+                    <ul>
+                        <li>Interactive Puzzles</li>
+                        <li>Scent Work Games</li>
+                        <li>Hide and Seek</li>
+                        <li>Frisbee/Fetch</li>
+                        <li>Tug of War</li>
+                    </ul>
+                  </div>
+                </section>
             </section>
             <section>
                 <!--Used the heading 2 tag to create the heading for a section of content-->
