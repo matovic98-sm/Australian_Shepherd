@@ -1,45 +1,59 @@
+/*Changed the background color of both pages and changed the margin so add 
+space on the left of both pages by targeting the body element*/
 body {
     background-color: lightsteelblue;
     margin-left:30px;
 }
+/*Targeted the headers of both pages to change their background color 
+and centered the text on the page*/
 header {
     background-color:rgb(96, 128, 209);
     text-align: center;
 }
+/*Targeted h1 tags to set the font size, bold the text, change the font family
+and add space beneath*/
 h1 {
     font-size: 50px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 10px;
 }
+/*Targeted h2 tags to set font size and font family*/
 h2 {
     font-size: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+/*Targeted h3 tags to set font size and font family*/
 h3 {
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*Targeted p tags to set font size and font family*/
 p {
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*Targeted img elements to set the image size and round the edges*/
 img {
     width:60%;
     height: auto;
     border-radius:20px;
     display: block;
 }
+/*Target ol tags to set font size, font family, and change the font style*/
 ol {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
 }
+/*Targeted ul tags to set font size, font family, and change font style*/
 ul {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
 }
+/*Targeted the button class to a button for the navigation link in the footer.
+Changed background color, text color, alignment, and border radius*/
 .button {
     background-color: darkblue;
     color:aliceblue;
@@ -49,21 +63,29 @@ ul {
     margin:20px;
     border-radius:10px
 }
+/*Centered text in the footer*/
 footer {
     text-align: center;
 }
+/*Targeted the anchor tag in the footer to remove the underline, change the text
+color, increase the font size, and bold the text*/
 footer a {
     text-decoration: none;
     color:aliceblue;
     font-size:20px;
     font-weight: bold;
 }
+/*Targeted the subheader class to give it a different font size, font weight,
+italicize it, and make it a dark gray color*/
 .subheader {
     font-size: 20px;
     font-weight: 500;
     font-style: italic;
     color:rgb(42, 48, 48);
 }
+/*Targeted the page1_image ID to only apply changes to the image on index.html.
+Included an inset border style, a border color, a space above, and changed the 
+size*/
 #page1_image {
     border-style: inset;
     border-color: cornflowerblue;
@@ -71,47 +93,55 @@ footer a {
     width:80%;
     height:auto;
 }
+/*Targeted the overview class to change font size*/
 .overview {
     font-size: 20px;
 }
+/*Targeted page1_header ID to only change index.html by rounding its edges
+and adding space within the heading*/
 #page1_header {
     border-radius: 20px;
     padding-bottom:4px;
 }
+/*Targeted training_games_row ID to define how the flex box row acts on page2.html*/
 #training_games_row {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
     justify-content:center;
     gap:120px;
 }
-.column1 .column2 {
+/*Targeted the column1 and column2 classes to define the layout and spacing
+of the flexbox columns on page2.html*/
+.column1, .column2 {
     display:flex;
     flex-direction:column;
     margin:30px;
 }
+/*Targeted image1_wrapper ID to define the flex box row's size and spacing on index.html */
 #image1_wrapper {
     display:flex;
     flex-direction: row;
     justify-content:space-around;
     margin:60px;
 }
-.index_column1 .index_column2 {
+/*Targeted index_column1 and index_column2 to define the spacing of the columns*/
+.index_column1, .index_column2 {
     display:flex;
     flex-direction:column;
-    justify-content:center;
 }
+/*Targeted index_column2 class to set it's size and push it left inside it's container*/
 .index_column2 {
     padding-right: 240px;
     width:40%;
 }
+/*Targeted image2_wrapper ID to define how the flex box's size and spacing on page2.html*/
 #image2_wrapper {
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
     justify-content: center;
     margin:60px;
 }
+/*Targeted page2_column2 class to adjust spacing, size, and push it left*/
 .page2_column2 {
     display:flex;
     flex-direction:column;
@@ -119,6 +149,7 @@ footer a {
     width:50%;
     justify-content:left;
 }
+/*Targeted page2_image ID to adjust size*/
 #page2_image {
     width:80%;
     height:auto;
