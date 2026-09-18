@@ -7,7 +7,7 @@ body {
 /*Targeted the headers of both pages to change their background color 
 and centered the text on the page*/
 header {
-    background-color:rgb(96, 128, 209);
+    background-color:rgb(96, 128, 209, 0.70);
     text-align: center;
 }
 /*Targeted h1 tags to set the font size, bold the text, change the font family
