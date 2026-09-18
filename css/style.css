@@ -90,8 +90,7 @@ size*/
     border-style: inset;
     border-color: cornflowerblue;
     margin-top:10px;
-    width:80%;
-    height:auto;
+    width:100%;
 }
 /*Targeted the overview class to change font size*/
 .overview {
@@ -107,50 +106,66 @@ and adding space within the heading*/
 #training_games_row {
     display:flex;
     flex-direction: row;
-    justify-content:center;
-    gap:120px;
+    gap:80px;
 }
 /*Targeted the column1 and column2 classes to define the layout and spacing
 of the flexbox columns on page2.html*/
 .column1, .column2 {
     display:flex;
     flex-direction:column;
-    margin:30px;
 }
 /*Targeted image1_wrapper ID to define the flex box row's size and spacing on index.html */
 #image1_wrapper {
     display:flex;
     flex-direction: row;
     justify-content:space-around;
-    margin:60px;
+    gap:40px;
+    margin:60px 0;
+    width:auto;
 }
 /*Targeted index_column1 and index_column2 to define the spacing of the columns*/
 .index_column1, .index_column2 {
     display:flex;
     flex-direction:column;
 }
-/*Targeted index_column2 class to set it's size and push it left inside it's container*/
+.index_column1 {
+    flex:1;
+}
 .index_column2 {
-    padding-right: 240px;
-    width:40%;
+    flex:2;
 }
 /*Targeted image2_wrapper ID to define how the flex box's size and spacing on page2.html*/
 #image2_wrapper {
     display:flex;
     flex-direction:row;
-    justify-content: center;
-    margin:60px;
+    justify-content: space-around;
+    gap:40px;
+    margin:60px 0;
+    width:auto;
+}
+.page2_column1 {
+    flex:1;
 }
 /*Targeted page2_column2 class to adjust spacing, size, and push it left*/
 .page2_column2 {
     display:flex;
     flex-direction:column;
-    padding-right:320px;
-    width:50%;
-    justify-content:left;
+    flex:2;
 }
 /*Targeted page2_image ID to adjust size*/
 #page2_image {
-    width:80%;
+    width:100%;
     height:auto;
+}
+@media (max-width: 600px) {
+    #image1_wrapper, #image2_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px) {
+    #training_games_row {
+        flex-direction: column;
+        gap:20px;
+    }
 }
