@@ -2,14 +2,12 @@
 space on the left of both pages by targeting the body element*/
 body {
     background-color: lightsteelblue;
-    margin-left:30px;
 }
 /*Targeted the headers of both pages to change their background color 
 and centered the text on the page and added a opacity percentage to improve
 text readability*/
 header {
     background-color:rgb(96, 128, 209, 0.70);
-    text-align: center;
 }
 /*Targeted h1 tags to set the font size, bold the text, change the font family
 and add space beneath*/
@@ -36,7 +34,6 @@ p {
 }
 /*Targeted img elements to set the image size and round the edges*/
 img {
-    width:60%;
     height: auto;
     border-radius:20px;
     display: block;
@@ -89,11 +86,11 @@ size*/
     border-style: inset;
     border-color: cornflowerblue;
     margin-top:10px;
-    width:100%;
 }
 /*Targeted the overview class to change font size*/
-.overview {
+.overview.lead{
     font-size: 20px;
+    font-weight:400;
 }
 /*Targeted page1_header ID to only change index.html by rounding its edges
 and adding space within the heading*/
@@ -119,66 +116,75 @@ of the flexbox columns on page2.html*/
 /*Targeted image1_wrapper ID to define the flex box row's size, layout and spacing
 on index.html */
 #image1_wrapper {
-    display:flex;
+    margin:60px 0;
+}
+  /*display:flex;
     flex-direction: row;
     justify-content:space-around;
-    gap:40px;
-    margin:60px 0;
-    width:auto;
-}
+    width:auto;*/
+
 /*Targeted index_column1 and index_column2 to define the spacing of the columns*/
+/*
 .index_column1, .index_column2 {
     display:flex;
     flex-direction:column;
 }
+    */
 /*Used flex-grow properties to adjust the amount of extra space the 
 columns take up in the flexbox*/
+/*
 .index_column1 {
     flex:1;
 }
 .index_column2 {
     flex:2;
 }
+    */
 /*Targeted image2_wrapper ID to define how the flex box's size and spacing on page2.html*/
 #image2_wrapper {
-    display:flex;
+    margin:60px 0;
+}
+ /* display:flex;
     flex-direction:row;
     justify-content: space-around;
-    gap:40px;
-    margin:60px 0;
-    width:auto;
-}
+    width:auto; */
+
 /*Used flex grow properties to adjust the amount of extra space page2_column1
 takes up in the flexbox*/
+/*
 .page2_column1 {
     flex:1;
 }
 /*Targeted page2_column2 class to define the flex direction as a column
 adjust spacing the amount of extra space the column takes up in the flexbox*/
+/*
 .page2_column2 {
     display:flex;
     flex-direction:column;
     flex:2;
-}
+} 
+*/
 /*Targeted page2_image ID to adjust size*/
+/*
 #page2_image {
     width:100%;
-    height:auto;
 }
+    */
 /*Added a media query to adjust image1_wrapper and image2_wrapper flexboxes
 layouts on screens 600 pixels or smaller. This stacks elements instead of displaying
 them side by side and centers them on the page*/
 @media (max-width: 600px) {
-    #image1_wrapper, #image2_wrapper {
-        flex-direction: column;
+    #image1_wrapper, #image2_wrapper, #training_games_row {
         align-items: center;
     }
 }
 /*Added an additional media query to target the training_games_row flexbox
 specifically.This stacks the elements and reduces the gap on screens 600 pixels 
 or smaller*/
+/*
 @media (max-width: 600px) {
     #training_games_row {
         flex-direction: column;
     }
 }
+    */
