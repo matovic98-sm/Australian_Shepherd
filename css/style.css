@@ -55,18 +55,16 @@ ul {
 }
 /*Targeted the button class to a button for the navigation link in the footer.
 Changed background color, text color, alignment, and border radius*/
-.button {
+.btn-light {
     background-color: darkblue;
     color:aliceblue;
-    padding:20px;
-    text-align:center;
-    display:inline-block;
-    margin:20px;
+    padding:14px;
     border-radius:10px
 }
 /*Centered text in the footer*/
 footer {
     text-align: center;
+    margin-top: 40px;
 }
 /*Targeted the anchor tag in the footer to remove the underline, change the text
 color, increase the font size, and bold the text*/
@@ -105,17 +103,19 @@ and adding space within the heading*/
 }
 /*Targeted training_games_row ID to define how the flex box row acts on page2.html
 and added a gap between elements*/
+/*
 #training_games_row {
     display:flex;
     flex-direction: row;
     gap:80px;
-}
+}*/
 /*Targeted the column1 and column2 classes to define the layout and spacing
 of the flexbox columns on page2.html*/
+/*
 .column1, .column2 {
     display:flex;
     flex-direction:column;
-}
+}/*
 /*Targeted image1_wrapper ID to define the flex box row's size, layout and spacing
 on index.html */
 #image1_wrapper {
@@ -180,6 +180,5 @@ or smaller*/
 @media (max-width: 600px) {
     #training_games_row {
         flex-direction: column;
-        gap:20px;
     }
 }
