@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Created a title for visitors to find the webpage-->
     <title>Australian Shepherds</title>
-    
+    <!--Link to Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
     crossorigin="anonymous">
-    
+    <!--Link to stylesheet-->
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
+<!--Created a container to wrap the page's content for a responsive layout-->
 <body class="container">
-    <!--Created a unique page1_header ID to only select this page's header-->
+    <!--Created a unique page1_header ID to only select this page's header
+    and used a Bootstrap class to center text and add a add a top margin-->
     <header id="page1_header" class="text-center mt-4">
         <!--Used heading 1 tag to indicate the main topic of the page-->
         <h1>Australian Shepherds</h1>
         <!--Used a paragraph tag to add text explaining the content of the page-->
-        <!--Created a p class to be used for overview text in the header-->
+        <!--Created a p class to be used for overview text in the header and
+        added Bootstrap lead to make the text slightly bigger-->
         <p class="overview lead">
             This page is all about Australian Shepherds! In it, we talk about 
             their history, key characteristics, and common health issues they 
@@ -28,38 +31,48 @@
     <main>
         <article>
             <!--Included an image and alternative text to describe the image
-            for screen readers, the source for the image's location, and defined the width
-            to maintain a consistent image size relative to different screen sizes-->
-            <!--Created a section id to wrap elements for flex box styling-->
+            for screen readers, the source for the image's location, and added img-fluid
+            to make the image responsive-->
+            <!--Created a section id to wrap elements for Bootstrap grid styling-->
             <section id="image1_wrapper" class="row">
-              <!--Created a div class to define the first column in the flexbox-->
+              <!--Created a div class to define the first column in the grid-->
               <div class="index_column1 col-md-6">
                 <img id="page1_image" class="img-fluid"
                     alt="An image of my black-and-white bicolor Australian Shepherd, Meadow, sitting in a field with a river in the background." 
                     src="images/Meadow1.jpeg" 
                 />
               </div>
-               <!--Created a div class to define the second column in the flexbox-->
+               <!--Created a div class to define the second column in the grid,
+               specifying that it should take up half of 12 grid spaces and adding
+               a top margin-->
                <div class="index_column2 col-md-6 mt-4">
+                <!--Created a card class for Bootstrap and added a bottom margin-->
                 <div class="card mb-4">
-                    <!--Used the heading 2 tag to create the heading for a section of content-->
+                    <!--Used the heading 2 tag to create the heading for a section of content
+                    and defined it as a header for the card-->
                     <h2 class="card-header">History</h2>
-                    <!--Used the paragraph tag to create placeholder text for future content-->
+                    <!--Used the paragraph tag to create placeholder text for future content
+                    and defined it as the card's body-->
                     <p class="card-body">
                         Here I will talk about the history of Australian Shepherds.
                     </p>
                 </div>
+                <!--Created a card class for Bootstrap-->
                 <div class="card">
-                    <!--Used the heading 2 tag to create the heading for a section of content-->
+                    <!--Used the heading 2 tag to create the heading for a section of content
+                    and defined it as the card's header-->
                     <h2 class="card-header">Temperament</h2>
-                    <!--Used the paragraph tag to create placeholder text for future content-->
+                    <!--Used the paragraph tag to create placeholder text for future content
+                    and defined it as the card's body-->
                     <p class="card-body">
                     Here I will talk about the temperament of Australian Shepherds.
                     </p>
                 </div>
                </div>
             </section>
+            <!--Created another grid to alter the layout of the content and center it-->
             <section class="row justify-content-center">
+              <!--Specified that the column should take up half of the grid space-->
               <div class="col-md-6">
                 <!--Used the heading 2 tag to create the heading for a section of content-->
                 <h2>Appearance</h2>
@@ -88,6 +101,8 @@
                     <li>Solid Colors</li>
                 </ol>
               </div>
+              <!--Specified that this column should take up the remaining half of the grid space
+              and added a small top margin-->
               <div class="col-md-6 mt-2">
                 <!--Used heading 3 tag to put less emphasis on this section-->
                 <h3>Common Health Issues</h3>
@@ -119,9 +134,10 @@
             <!--Used an anchor tag to link to the other internal webpage and used
             a paragraph tag to wrap the link with text-->
             <!--Created a button p class to style the navigation link in the footer-->
+            <!--Used Bootstrap to create a large button with a white outline-->
             <p class="button">
                 <a href="page2.html" class="btn btn-light btn-lg">
-                    Learn about Australian Shepherd care.
+                    Learn about Australian Shepherd care
                 </a>
             </p>
         </nav>

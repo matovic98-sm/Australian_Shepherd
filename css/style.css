@@ -1,11 +1,9 @@
-/*Changed the background color of both pages and changed the margin so add 
-space on the left of both pages by targeting the body element*/
+/*Changed the background color of both pages*/
 body {
     background-color: lightsteelblue;
 }
 /*Targeted the headers of both pages to change their background color 
-and centered the text on the page and added a opacity percentage to improve
-text readability*/
+and added a opacity percentage to improve text readability*/
 header {
     background-color:rgb(96, 128, 209, 0.70);
 }
@@ -32,7 +30,7 @@ p {
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*Targeted img elements to set the image size and round the edges*/
+/*Targeted img elements to set responsive image rules and round the borders*/
 img {
     height: auto;
     border-radius:20px;
@@ -80,14 +78,13 @@ italicize it, and make it a dark gray color*/
     color:rgb(42, 48, 48);
 }
 /*Targeted the page1_image ID to only apply changes to the image on index.html.
-Included an inset border style, a border color, a space above, and changed the 
-size*/
+Included an inset border style, a border color, a space above*/
 #page1_image {
     border-style: inset;
     border-color: cornflowerblue;
     margin-top:10px;
 }
-/*Targeted the overview class to change font size*/
+/*Targeted the overview class to change font size and weight*/
 .overview.lead{
     font-size: 20px;
     font-weight:400;
@@ -98,93 +95,43 @@ and adding space within the heading*/
     border-radius: 20px;
     padding-bottom:4px;
 }
-/*Targeted training_games_row ID to define how the flex box row acts on page2.html
-and added a gap between elements*/
-/*
-#training_games_row {
-    display:flex;
-    flex-direction: row;
-    gap:80px;
-}*/
-/*Targeted the column1 and column2 classes to define the layout and spacing
-of the flexbox columns on page2.html*/
-/*
-.column1, .column2 {
-    display:flex;
-    flex-direction:column;
-}/*
-/*Targeted image1_wrapper ID to define the flex box row's size, layout and spacing
-on index.html */
+/*Targeted image1_wrapper ID to adjust spacing on index.html*/
 #image1_wrapper {
     margin:60px 0;
 }
-  /*display:flex;
-    flex-direction: row;
-    justify-content:space-around;
-    width:auto;*/
-
-/*Targeted index_column1 and index_column2 to define the spacing of the columns*/
-/*
-.index_column1, .index_column2 {
-    display:flex;
-    flex-direction:column;
-}
-    */
-/*Used flex-grow properties to adjust the amount of extra space the 
-columns take up in the flexbox*/
-/*
-.index_column1 {
-    flex:1;
-}
-.index_column2 {
-    flex:2;
-}
-    */
-/*Targeted image2_wrapper ID to define how the flex box's size and spacing on page2.html*/
+/*Targeted image2_wrapper ID to adjust spacing on page2.html*/
 #image2_wrapper {
     margin:60px 0;
 }
- /* display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-    width:auto; */
-
-/*Used flex grow properties to adjust the amount of extra space page2_column1
-takes up in the flexbox*/
-/*
-.page2_column1 {
-    flex:1;
+/*Targeted the Bootstrap card class to change the background color*/
+.card {
+    background-color: rgb(96, 128, 209, 0.50);
 }
-/*Targeted page2_column2 class to define the flex direction as a column
-adjust spacing the amount of extra space the column takes up in the flexbox*/
-/*
-.page2_column2 {
-    display:flex;
-    flex-direction:column;
-    flex:2;
-} 
-*/
-/*Targeted page2_image ID to adjust size*/
-/*
-#page2_image {
-    width:100%;
+/*Targeted the columns in training_games_row to add a styled blue border, specify
+that the contents should take up all available space in their respective columns, 
+add a background color, and add padding within the top of the columns*/
+#training_games_row .col-md-6 {
+    border: 2px rgb(80, 112, 173);
+    border-style: groove;
+    height:100%;
+    background-color:rgb(168, 191, 234);
+    padding-top: 10px;
 }
-    */
-/*Added a media query to adjust image1_wrapper and image2_wrapper flexboxes
-layouts on screens 600 pixels or smaller. This stacks elements instead of displaying
-them side by side and centers them on the page*/
+/*Targeted the ordered lists and unordered lists in training_games_row grid to
+center the lists within their columns*/
+#training_games_row ol, 
+#training_games_row ul {
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*Added a media query to adjust image1_wrapper, image2_wrapper, and training_games_row
+to align contents in the center of the screen and added a top and bottom margin
+of 20px for screens smaller than 600 pixels to add space between elements*/
 @media (max-width: 600px) {
     #image1_wrapper, #image2_wrapper, #training_games_row {
         align-items: center;
+        margin:20px 0;
     }
 }
-/*Added an additional media query to target the training_games_row flexbox
-specifically.This stacks the elements and reduces the gap on screens 600 pixels 
-or smaller*/
-/*
-@media (max-width: 600px) {
-    #training_games_row {
-        flex-direction: column;
-    }
-}
-    */
+
